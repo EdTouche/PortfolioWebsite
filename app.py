@@ -1,6 +1,13 @@
 import streamlit as st
 from PIL import Image
 
+# Tab config
+st.set_page_config(
+    page_title="Edward Touche",
+    page_icon="",
+    layout="centered", # wide
+    initial_sidebar_state="auto") # collapsed
+
 # Page style
 st.markdown(
         f"""
@@ -33,13 +40,14 @@ image = Image.open("Picture.jpeg")
 col1, col2 = st.beta_columns((1,3))
 col1.image(image, width=200)
 col2.markdown("""
-# This is my portfolio site!
-I am an aspiring data analyst and technology consultant, with a keen
-passion in all things technology. Since graduating into a pandemic, I 
-have spent my time gathering skills and qualifications. I have become very 
-proficient at Python for data science. That combined with my, Google Analytics Basic 
-and Advanced qualifications, knowledge of SPSS and statistics and my familiarity of Office365
-I am an ideal candidate for any data analyst and technology consultant roles!
+    # Welcome to my site!
+    I am an aspiring data analyst and technology consultant, with a keen
+    passion in all things technology. Since graduating into a pandemic, I 
+    have spent my time gathering skills and qualifications. I have become very 
+    proficient at Python for data science, analytics, machine and deep learning. 
+    That combined with my, Google Analytics Basic and Advanced qualifications, 
+    knowledge of SPSS and statistics and my familiarity of Office365
+    I am an ideal candidate for any data analyst and technology consultant roles!
 """)
 
 # Links line
