@@ -23,17 +23,28 @@ st.markdown(
 
 # Header
 st.write('<style>body { margin: 0; font-family: Arial, Helvetica, sans-serif;}\
-     .header{padding: 10px 215px; background: #555; color: #f1f1f1; position:fixed;top:0;}\
+     .header{padding: 10px 218px; background: #555; color: #f1f1f1; position:fixed;top:0;}\
       .sticky { position: fixed; top: 0; width: 100%;} </style>\
           <div class="header" id="myHeader">'+str("Edward Touche: Aspiring Data Analyst and Tech Consultant")+'</div>',\
                unsafe_allow_html=True)
-# Image and description columns
+
+# Image and bio columns
 image = Image.open("Picture.jpeg")
 col1, col2 = st.beta_columns((1,3))
 col1.image(image, width=200)
 col2.markdown("""
 # This is my portfolio site!
-## Here you can find useful links to my profiles and projects!
+I am an aspiring data analyst and technology consultant, with a keen
+passion in all things technology. Since graduating into a pandemic, I 
+have spent my time gathering skills and qualifications. I have become very 
+proficient at Python for data science. That combined with my, Google Analytics Basic 
+and Advanced qualifications, knowledge of SPSS and statistics and my familiarity of Office365
+I am an ideal candidate for any data analyst and technology consultant roles!
+""")
+
+# Links line
+st.markdown(""" 
+### Here you can find useful links to my profiles and projects!
 """)
 
 # Checkboxes for links
